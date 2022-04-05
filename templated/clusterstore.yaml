@@ -1,0 +1,11 @@
+#@ load("@ytt:data", "data")
+
+---
+apiVersion: kpack.io/v1alpha2
+kind: ClusterStore
+metadata:
+  name: default
+spec:
+  sources:
+  #@ for/end image in data.values.store_images:
+    - image: #@ image

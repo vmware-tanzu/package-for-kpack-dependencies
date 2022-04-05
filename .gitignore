@@ -1,4 +1,4 @@
-# Ignore everything in this directory
-*
-# Except this file
-!.gitignore
+.idea/
+pushed_bundle.lock
+templated-package.yaml
+templated-bundle/
