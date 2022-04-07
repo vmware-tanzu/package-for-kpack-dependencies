@@ -35,7 +35,7 @@ installation.
 
 ### Prerequisites
 
-- The [kpack package](https://github.com/vmware-tanzu/package-for-kpack) is installed
+* The [kpack package](https://github.com/vmware-tanzu/package-for-kpack) is installed
 
 ### Package Installation steps
 
@@ -83,8 +83,8 @@ After installing kpack dependencies dependencies do not need to be manually inst
     ```
 
    > Note: The `<REGISTRY-HOSTNAME>` must be the registry prefix for its corresponding registry
-   - For [dockerhub](https://hub.docker.com/) this should be `https://index.docker.io/v1/`. `kp` also offers a simplified way to create a dockerhub secret with a `--dockerhub` flag.
-   - For [GCR](https://cloud.google.com/container-registry/) this should be `gcr.io`. If you use GCR then the username can be `_json_key` and the password can be the JSON credentials you get from the GCP UI (under `IAM -> Service Accounts` create an account or edit an existing one and create a key with type JSON). `kp` also offers a simplified way to create a gcr secret with a `--gcr` flag.
+   * For [dockerhub](https://hub.docker.com/) this should be `https://index.docker.io/v1/`. `kp` also offers a simplified way to create a dockerhub secret with a `--dockerhub` flag.
+   * For [GCR](https://cloud.google.com/container-registry/) this should be `gcr.io`. If you use GCR then the username can be `_json_key` and the password can be the JSON credentials you get from the GCP UI (under `IAM -> Service Accounts` create an account or edit an existing one and create a key with type JSON). `kp` also offers a simplified way to create a gcr secret with a `--gcr` flag.
 
    Your secret create should look something like this:
 
