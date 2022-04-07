@@ -14,11 +14,11 @@ spec:
   releaseNotes: ""
   valuesSchema:
     openAPIv3:
-      title: kpack.tanzu.vmware.com values schema
+      title: kpack-dependencies.community.tanzu.vmware.com values schema
       properties:
-        repository:
+        kp_default_repository:
           type: string
-          description: docker repository
+          description: Docker repository for builder images. The same value used during installation of kpack.
           examples:
             - registry.io/kpack
   template:

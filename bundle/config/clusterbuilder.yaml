@@ -11,7 +11,7 @@ spec:
   serviceAccountRef:
     name: kp-default-repository-serviceaccount
     namespace: kpack
-  tag: #@ "{}:clusterbuilder-{}".format(data.values.repository, "base")
+  tag: #@ "{}:clusterbuilder-{}".format(data.values.kp_default_repository, "base")
   stack:
     name: base
     kind: ClusterStack
@@ -43,7 +43,7 @@ spec:
   serviceAccountRef:
     name: kp-default-repository-serviceaccount
     namespace: kpack
-  tag: #@ "{}:clusterbuilder-{}".format(data.values.repository, "default")
+  tag: #@ "{}:clusterbuilder-{}".format(data.values.kp_default_repository, "default")
   stack:
     name: base
     kind: ClusterStack

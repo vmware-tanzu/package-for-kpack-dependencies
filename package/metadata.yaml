@@ -7,8 +7,8 @@ metadata:
   name: kpack-dependencies.community.tanzu.vmware.com
 spec:
   displayName: "kpack dependencies"
-  longDescription: ""
-  shortDescription: ""
+  longDescription: "Dependencies in the form of Buildpacks and Stacks for the kpack package"
+  shortDescription: "Dependencies in the form of Buildpacks and Stacks for the kpack package"
   supportDescription: "Go to https://github.com/vmware-tanzu/package-for-kpack-dependencies for documentation or the #kpack channel on Kubernetes slack"
   providerName: "VMware"
   categories:

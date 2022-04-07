@@ -27,9 +27,9 @@ installation.
 
 ### kpack Configuration
 
-| Value                 | Required/Optional | Description                                                                                       |
-|-----------------------|-------------------|---------------------------------------------------------------------------------------------------|
-| `repository`          | Required          | Docker repository used for builder images (i.e. `gcr.io/my-project/my-repo` or `mydockerhubusername/my-repo`.|
+| Value                    | Required/Optional | Description                                                                                                                                                                     |
+|--------------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `kp_default_repository`  | Required          | Docker repository used for builder images (i.e. `gcr.io/my-project/my-repo` or `mydockerhubusername/my-repo`. **This must be the same value used during installation of kpack.**|
 
 ## Installation
 
@@ -44,6 +44,8 @@ You can install the kpack dependencies package using the command below:
 `tanzu package install kpack-dependencies --package-name kpack-dependencies.community.tanzu.vmware.com --version 0.0.1 -f kpack-deps-values.yaml`
 
 Once the package is installed you can view the resources that have been created:
+
+**NOTE: These resources cannot be modified manually, they can only be upgraded via upgrades of the kpack dependencies package. If you wish to create custom ClusterStores, ClusterStacks, or ClusterBuilders you must create [new resources](https://github.com/pivotal/kpack/blob/main/docs/tutorial.md) and manage them manually.**
 
 ```bash
 $ kubectl get clusterstore
@@ -60,8 +62,6 @@ NAME      LATESTIMAGE    READY
 base      <some-image>   True
 default   <some-image>   True
 ```
-
-**NOTE: These resources cannot be modified manually, they can only be upgraded via upgrades of the kpack dependencies package. If you wish to create custom ClusterStores, ClusterStacks, or ClusterBuilders you must create [new resources](https://github.com/pivotal/kpack/blob/main/docs/tutorial.md) and manage them manually.**
 
 ## Configuration and Usage
 
