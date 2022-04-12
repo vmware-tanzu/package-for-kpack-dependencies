@@ -68,9 +68,9 @@ default   <some-image>   True
 After installing kpack dependencies dependencies do not need to be manually installed, and you can immediately create source-to-image builds.
 
 * [Creating an image using kp](#creating-an-image-using-kp-cli)
-* [Creating an image using kubectl](#creating-an-image-using-kube 6ctl)
+* [Creating an image using kubectl](#creating-an-image-using-kubectl)
 
-### Creating an image using kp CLI
+### <a id="creating-an-image-using-kp-cli"></a> Creating an image using kp CLI
 
 1. Create a secret with push credentials for the docker registry that you plan on publishing OCI images to with kpack.
 
@@ -244,7 +244,7 @@ After installing kpack dependencies dependencies do not need to be manually inst
    Image Resource, kpack will automatically create a new build to rebuild your
    OCI image.
 
-### Creating an image using kubectl
+### <a id="creating-an-image-using-kubectl"></a> Creating an image using kubectl
 
 1. Create a secret with push credentials for the docker registry that you plan on publishing OCI images to with kpack.
 
